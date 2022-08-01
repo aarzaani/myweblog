@@ -75,10 +75,21 @@
     scroll-behavior: smooth;
   }
 }
-
+@font-face {
+  font-family: 'Vazir-Light';
+  src: url('fonts/Vazir-Light.eot');
+  src: url('fonts/Vazir-Light.woff') format('woff');
+  url('fonts/Vazir-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: 'Vazir-Light';
+}
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family: 'Vazir-Light';
+  /* font-family: var(--bs-body-font-family); */
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -11294,10 +11305,10 @@ html {
 .feature {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  height: 3rem;
-  width: 3rem;
-  font-size: 1.5rem;
+  justify-content: flex-start;
+  height: 1.5rem;
+  width: 100%;
+  font-size: 1rem;
 }
 
 .bg-featured-blog {
